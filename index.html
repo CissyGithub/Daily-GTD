@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>GTD Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>欢迎来到我的网站！</h1>
-    <p>这是我通过 GitHub Pages 创建的简单网站。</p>
+    <h1>生成您的 GTD Todo List</h1>
+
+    <!-- 输入框 -->
+    <textarea id="userInput" placeholder="请输入今天要做的事情"></textarea>
+    <button id="generateTodo">生成 Todo List</button>
+
+    <!-- 显示AI生成的todo list和确认按钮 -->
+    <div id="todoListContainer" style="display: none;">
+        <h2>您的 Todo List</h2>
+        <div id="todoList"></div>
+        <textarea id="editSuggestions" placeholder="修改意见"></textarea>
+        <button id="confirmTodo">确认不更改</button>
+    </div>
+
+    <!-- 下载按钮 -->
+    <button id="downloadTodo" style="display: none;">下载 Todo List 图片</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
