@@ -1,5 +1,5 @@
 // 替换成你的 API 密钥
-const apiKey = "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"; // 在这里替换成你的实际 API 密钥
+const apiKey = "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"; // 在这里替换成你的实际 API 密钥
 
 // 生成 todo list 的函数
 document.getElementById("generateTodo").addEventListener("click", async () => {
