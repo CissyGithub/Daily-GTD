@@ -27,7 +27,16 @@ document.getElementById("generateTodo").addEventListener("click", async () => {
 
         const data = await response.json();
         const generatedTodo = data.choices[0].message.content;
+    document.getElementById("generateTodo").addEventListener("click", () => {
+        const userInput = document.getElementById("userInput").value;
+        if (!userInput) {
+            alert("请输入今天要做的事情");
+            return;
+        }
 
+    // 调用 API 或其他操作
+    console.log("生成 Todo List");
+});
         // 显示生成的 todo list
         const todoListContainer = document.getElementById("todoListContainer");
         const todoList = document.getElementById("todoList");
